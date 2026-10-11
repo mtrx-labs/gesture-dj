@@ -1,0 +1,10 @@
+# Gesture DJ - pinned dependencies (Windows, Python 3.10-3.12)
+# This machine: user-installed Python 3.12 (the `py` launcher default).
+# MediaPipe does not ship wheels for 3.13, so do NOT upgrade to 3.13 yet.
+
+mediapipe==0.10.21        # hand tracking (21 3-D landmarks per hand)
+opencv-python==4.11.0.86  # webcam capture + on-screen overlay drawing
+numpy==1.26.4             # kept <2.0 because mediapipe 0.10.x wheels target the numpy 1.x ABI
+pycaw==20240210           # Windows master (endpoint) volume control
+comtypes==1.4.8           # COM plumbing required by pycaw
+pyautogui==0.9.54         # media keys: playpause / nexttrack / prevtrack
